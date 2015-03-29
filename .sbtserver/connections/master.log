@@ -1,0 +1,29 @@
+New log file opened at Sun Mar 29 15:18:34 BST 2015 by 18133@serial.home
+Taking next connection to: 58478
+New client attempting to connect on port: 58479-58478
+  Address = /192.168.1.103:58478
+This client on port 58479 has uuid 73de57a1-a23e-4f79-b59a-fd36cf665dfa configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-73de57a1-a23e-4f79-b59a-fd36cf665dfa
+Taking next connection to: 58478
+New client attempting to connect on port: 58489-58478
+  Address = /192.168.1.103:58478
+Handshake exception on socket: 58489
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:189)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 58478
+New client attempting to connect on port: 58490-58478
+  Address = /192.168.1.103:58478
+This client on port 58490 has uuid 50c76e5a-aabd-4816-b1f1-c771a84577bc configName activator humanReadableName Activator protocolVersion 1 featureTags Vector()
+Connected Clients: activator-50c76e5a-aabd-4816-b1f1-c771a84577bc
+Taking next connection to: 58478
